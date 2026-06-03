@@ -33,7 +33,8 @@ export default function Footer() {
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-24 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse, rgba(37,99,235,0.15), transparent 70%)",
+          background:
+            "radial-gradient(ellipse, rgba(37,99,235,0.15), transparent 70%)",
           filter: "blur(20px)",
         }}
       />
@@ -43,11 +44,16 @@ export default function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-12 mb-16">
           {/* Brand column */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-2">
-            <a href="/" className="flex items-center gap-2 mb-4 group cursor-pointer w-fit">
+            <a
+              href="/"
+              className="flex items-center gap-2 mb-4 group cursor-pointer w-fit"
+            >
               <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-glow-sm">
                 <Zap className="w-4 h-4 text-white fill-white" />
               </div>
-              <span className="font-display font-bold text-white text-lg tracking-tight">NEXUS</span>
+              <span className="font-display font-bold text-white text-lg tracking-tight">
+                NEXUS
+              </span>
             </a>
             <p className="text-muted-text text-sm leading-relaxed max-w-xs mb-6">
               The future of personal audio. AI-powered. Beautifully engineered.
@@ -95,7 +101,8 @@ export default function Footer() {
           style={{ borderColor: "rgba(255,255,255,0.05)" }}
         >
           <p className="text-muted-text text-xs">
-            © 2025 NEXUS Audio Technologies. All rights reserved.
+            © {new Date().getFullYear()} NEXUS Audio Technologies. All rights
+            reserved.
           </p>
 
           {/* Ambient badge */}
